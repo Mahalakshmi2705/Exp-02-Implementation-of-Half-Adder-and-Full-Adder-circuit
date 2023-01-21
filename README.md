@@ -88,6 +88,10 @@ HALF ADDER:
 
 ![Screenshot (33)](https://user-images.githubusercontent.com/122199968/212870671-22def116-4573-4ebe-b055-c0db72c05f55.png)
 
+
+
+
+
 FULL ADDER:
 
 ![Screenshot (35)](https://user-images.githubusercontent.com/122199968/212871394-45d369db-b012-40d4-b8e7-3f4016c91324.png)
@@ -99,6 +103,10 @@ RTL realization:
 HALF ADDER:
 
 ![Screenshot (36)](https://user-images.githubusercontent.com/122199968/212871692-6e97dd93-618d-4f6f-8b56-541f76c4c2ce.png)
+
+
+
+
 
 FULL ADDER:
 
