@@ -8,11 +8,11 @@ To design a half adder and full adder circuit and verify its truth table in Quar
 
 Equipments Required:
 
-   Hardware – PCs, Cyclone II , USB flasher Software – Quartus prime
+Hardware – PCs, Cyclone II , USB flasher Software – Quartus prime
    
 Theory:
 
-    Adders are digital circuits that carry out addition of numbers.
+Adders are digital circuits that carry out addition of numbers.
 
 Half Adder:
 
@@ -35,50 +35,38 @@ Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin Carry = A
 
 #### Figure -02 FULL ADDER 
 
-### Procedure
+Procedure:
 
 Connect the supply (+5V) to the circuit
 Switch ON the main switch
 If the output is 1, then the led glows.
-### 
+
 
 
 Program:
 
-Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-
-Developed by:MAHALAKSHMI S
-
-RegisterNumber:22008601
+    Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
+    Developed by:MAHALAKSHMI S
+    RegisterNumber:22008601
 
 
-HALF ADDER:
+Half adder:
 
-module halfadd(a,b,sum,carry);
+    module halfadd(a,b,sum,carry);
+    input a,b;
+    output sum,carry;
+    xor(sum,a,b);
+    and(carry,a,b);
+    endmodule
 
-input a,b;
+Full adder:
 
-output sum,carry;
-
-xor(sum,a,b);
-
-and(carry,a,b);
-
-endmodule
-
-FULL ADDER:
-
-module fulladder(a,b,c,sum,carry);
-
-input a,b,c;
-
-output sum,carry;
-
-assign sum = ((a^b)^c);
-
-assign carry = ((a&b)|(b&c)|(c&a));
-
-endmodule
+    module fulladder(a,b,c,sum,carry);
+    input a,b,c;
+    output sum,carry;
+    assign sum = ((a^b)^c);
+    assign carry = ((a&b)|(b&c)|(c&a));
+    endmodule
 
 OUTPUT:
 
@@ -89,14 +77,9 @@ HALF ADDER:
 ![Screenshot (33)](https://user-images.githubusercontent.com/122199968/212870671-22def116-4573-4ebe-b055-c0db72c05f55.png)
 
 
-
-
-
 FULL ADDER:
 
 ![Screenshot (35)](https://user-images.githubusercontent.com/122199968/212871394-45d369db-b012-40d4-b8e7-3f4016c91324.png)
-
-
 
 RTL realization:
 
@@ -104,14 +87,9 @@ HALF ADDER:
 
 ![Screenshot (36)](https://user-images.githubusercontent.com/122199968/212871692-6e97dd93-618d-4f6f-8b56-541f76c4c2ce.png)
 
-
-
-
-
 FULL ADDER:
 
 ![Screenshot (37)](https://user-images.githubusercontent.com/122199968/212871937-a21d1f9d-cddf-46d4-9e90-bfe498712f98.png)
-
 
 TIMING DIAGRAM:
 
@@ -122,8 +100,6 @@ HALF ADDER:
 FULL ADDER:
 
 ![Screenshot (12)](https://user-images.githubusercontent.com/122199968/212872557-600dea36-5664-4f00-be96-4caf59c4217a.png)
-
-
 
 TRUTH TABLE:
 
